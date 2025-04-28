@@ -5,6 +5,7 @@ import Register from './components/Register.jsx'
 import Login from './components/Login.jsx'
 import Library from './components/Library.jsx'
 import Footer from './components/Footer.jsx'
+import Newbook from './components/Newbook.jsx'
 import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
               <Route path="/Register" element={<Register />} />
               <Route path="/Login" element={<Login />} />
               <Route path="/Library" element={<Library />} />
+              <Route path="/Newbook" element={<Newbook />} />
               <Route path="*" element={<Navigate to="/" />} />
            </Routes>
           </BrowserRouter>

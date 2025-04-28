@@ -21,6 +21,7 @@ function Menu() {
             <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                 <li><Link to="/Login"className="md:p-4 py-3 px-0 block text-white">Bejelentkezés</Link></li>
                 <li><Link to="/Library"className="md:p-4 py-3 px-0 block text-white">Könyvtár</Link></li>
+                <li><Link to="/Newbook"className="md:p-4 py-3 px-0 block text-white">Újkönyv</Link></li>
             </ul>
         </nav>
     </div>
