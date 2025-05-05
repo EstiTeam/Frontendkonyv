@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Newbook() {
     const [cim, setCim] = useState('');
@@ -8,6 +9,7 @@ function Newbook() {
     const [idegen_cim, setIdegenCim] = useState('');
     const [borito, setBorito] = useState('');
     const [besorolas, setBesorolas] = useState(''); // Új állapot a besorolás tárolására
+    const navigate = useNavigate();
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -33,6 +35,7 @@ function Newbook() {
                 setBesorolas(''); // Reset besorolás
                 setIdegenCim('');
                 setBorito('');
+                navigate('/Library'); // Navigálás a főoldalra
             })
             .catch((err) => {
                 console.error("Hiba történt a könyv hozzáadása során:", err);

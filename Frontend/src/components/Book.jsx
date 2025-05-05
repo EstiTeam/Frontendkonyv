@@ -56,7 +56,7 @@ function Book({ book }) {
                 <div className="mt-6 flex justify-end gap-1">
                     <button
                         onClick={handleStatusChange}
-                        className={`${book.elerheto ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-600'
+                        className={`${book.elerheto ? 'bg-green-500 hover:bg-green-600' : 'bg-red-500 hover:bg-red-600'
                             } text-white font-semibold py-2 px-4 rounded shadow-lg transition duration-300`}
                     >
                         {book.elerheto ? 'Kölcsönzés' : 'Visszahozta'}

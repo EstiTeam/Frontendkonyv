@@ -24,7 +24,7 @@ function Library() {
         axios.get(`${import.meta.env.VITE_BASE_URL}/books/search?cim=${kivalasztottKonyv}`)
         .then(res => setBook(res.data))
         .catch(err => alert(err.message));
-    }
+    }else {[refresh]}
   };
 
 
@@ -33,13 +33,13 @@ function Library() {
         <h1 className="text-4xl font-bold text-center text-sky-700 mb-6">Könyvtár</h1>
 
         <div className="flex py-5 items-center justify-center">
-          <div className="flex flex-col space-y-4 items-center">
+          <div className="flex flex-col space-y-4 items-center ">
             <input
               type="text"
               placeholder="Keresés"
               value={kivalasztottKonyv}
               onChange={(e) => setKivalasztottKonyv(e.target.value)}
-              className="bg-white border border-gray-300 rounded-lg py-2 px-4 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className=" bg-white text-black border border-gray-300 rounded-lg py-2 px-4 w-full max-w-xs focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button onClick={keres} className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
               Keresés
