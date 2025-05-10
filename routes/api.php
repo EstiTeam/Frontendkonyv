@@ -13,3 +13,7 @@ Route::get('/books', [BookController::class, 'GetBooks']);
 Route::get('/books/search', [BookController::class, 'GetBooksByTitle']);
 
 Route::post('/books', [BookController::class, 'CreateBook']);
+
+Route::put('/books/{id}', [BookController::class, 'UpdateBook']);
+
+Route::delete('/books/{id}', [BookController::class, 'DeleteBook']);

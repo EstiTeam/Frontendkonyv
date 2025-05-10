@@ -34,6 +34,8 @@ class Book extends Model
         return self::where('cim', 'LIKE', '%' . $cim . '%')->get();
     }
 
+
+
     
 
 
